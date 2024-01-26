@@ -1,10 +1,9 @@
 ---
-layout:     post
-title:      "Xubuntu 23.10 Release Notes"
-date:       2023-10-12 02:23:44 +0200
-categories: 2310
+layout:     document
+release:    "Xubuntu 23.10"
+title:      "Release Notes"
 ---
-**Welcome to the Xubuntu 23.10 “Mantic Minotaur” release notes!**
+**Welcome to the Xubuntu 23.10 "Mantic Minotaur" release notes!**
 
 Xubuntu 23.10 was released on Thursday, October 12, 2023, and will be supported for nine months until July 2024. For general information and the latest updates for Xubuntu 23.10, check out the [release page on](https://xubuntu.org/release/23-10) xubuntu.org.
 
