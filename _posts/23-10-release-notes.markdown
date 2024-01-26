@@ -1,7 +1,8 @@
 ---
-layout: post
-title:  "Xubuntu 23.10 Release Notes"
-date:   2023-10-12 02:23:44 +0200
+layout:     post
+title:      "Xubuntu 23.10 Release Notes"
+date:       2023-10-12 02:23:44 +0200
+categories: 2310
 ---
 **Welcome to the Xubuntu 23.10 “Mantic Minotaur” release notes!**
 
