@@ -2,32 +2,24 @@
 layout: default
 ---
 
-{%- if page.title -%}
-   <h1>{{ page.title }}</h1>
-{%- endif -%}
-
 {{ content }}
 
-{%- if site.posts.size > 0 -%}
-   <ul class="post-list">
-      {%- for post in site.posts -%}
-         <li>
-            <a class="button" href="{{ post.url | relative_url }}">
-               {{ post.release | escape }}
-            </a>
-         </li>
-      {%- endfor -%}
-   </ul>
-{%- endif -%}
-
-{%- if site.release_documents.size > 0 -%}
-   {% assign releases = site.release_documents | group_by: 'release' | reverse %}
+{%- if site.releases.size > 0 -%}
+   {% assign releases = site.releases | group_by: 'release' | reverse %}
    {%- for release in releases -%}
-      <h2>{{ release.name }}</h2>
-      <div class="release_documents">
-         {%- for document in release.items -%}
-            <a class="button" href="{{ document.url | relative_url }}">{{ document.title }}</a>
-         {%- endfor -%}
+      <div class="release">
+         <h2>Xubuntu {{ release.name }}</h2>
+         <div class="documents">
+            {%- for document in release.items -%}
+               <a class="button" href="{{ document.url | relative_url }}">
+                  {%- if document.link_name -%}
+                     {{ document.link_name }}
+                  {%- else -%}
+                     {{ document.title }}
+                  {%- endif -%}
+               </a>
+            {%- endfor -%}
+         </div>
       </div>
    {%- endfor -%}
 {%- endif -%}
