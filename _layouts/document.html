@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+{%- include head.html -%}
+<body>
+
+<div id="content">
+	<header>
+		<h1>
+			<a href="/">
+				<img src="{{ "/assets/logo.png" | relative_url }}" alt="Xubuntu" />
+			</a>
+		</h1>
+	</header>
+
+	<main>
+		<h1>{{ page.title }}</h1>
+		{{ content }}
+
+		<br />
+		<h1>See also</h1>
+		{%- if site.releases.size > 0 -%}
+			{% assign releases = site.releases | group_by: 'release' | reverse %}
+			{%- for release in releases -%}
+				{%- if release.name == page.release -%}
+					<p class="documents">
+						{%- for document in release.items -%}
+							{%- if document.title != page.title -%}
+								<a class="button" href="{{ document.url | relative_url }}">
+									{%- if document.link_name -%}
+										{{ document.link_name }}
+									{%- else -%}
+										{{ document.title }}
+									{%- endif -%}
+								</a>
+							{%- endif -%}
+						{%- endfor -%}
+						<a class="button" href="https://xubuntu.org/release/{{ release.name }}">{{ release.name }} Release Page (xubuntu.org)</a>
+					</p>
+				{%- endif -%}
+			{%- endfor -%}
+		{%- endif -%}
+
+	</main>
+</div>
+
+</body>
+</html>

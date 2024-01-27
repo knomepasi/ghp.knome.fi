@@ -1,5 +1,5 @@
 ---
-layout:    default
+layout:    document
 release:   "23.10"
 link_name: "Release Notes"
 title:     "Xubuntu 23.10 Release Notes"

@@ -9,7 +9,7 @@ layout: default
    {%- for release in releases -%}
       <div class="release">
          <h2>Xubuntu {{ release.name }}</h2>
-         <div class="documents">
+         <p class="documents">
             {%- for document in release.items -%}
                <a class="button" href="{{ document.url | relative_url }}">
                   {%- if document.link_name -%}
@@ -19,7 +19,8 @@ layout: default
                   {%- endif -%}
                </a>
             {%- endfor -%}
-         </div>
+         </p>
+         <p>For download links and more, visit the <a href="https://xubuntu.org/release/{{ release.name }}">{{ release.name }} Release Page</a> on xubuntu.org.</p>
       </div>
    {%- endfor -%}
 {%- endif -%}
