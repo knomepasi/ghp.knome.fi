@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Xubuntu 17.04 Release Notes | Xubuntu Release Documents</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Xubuntu 17.04 Release Notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Xubuntu 17.04 (Zesty Zapus)" />
+<meta property="og:description" content="Xubuntu 17.04 (Zesty Zapus)" />
+<link rel="canonical" href="http://localhost:4000/releases/17.04/release-notes.html" />
+<meta property="og:url" content="http://localhost:4000/releases/17.04/release-notes.html" />
+<meta property="og:site_name" content="Xubuntu Release Documents" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Xubuntu 17.04 Release Notes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Xubuntu 17.04 (Zesty Zapus)","headline":"Xubuntu 17.04 Release Notes","url":"http://localhost:4000/releases/17.04/release-notes.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/reset.css">
+  <link rel="stylesheet" href="/assets/xubuntu.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Xubuntu Release Documents" /></head>
+<body>
+
+<div id="content">
+	<header>
+		<h1>
+			<a href="/">
+				<img src="/assets/logo.png" alt="Xubuntu" />
+			</a>
+		</h1>
+	</header>
+
+	<main>
+		<h1>Xubuntu 17.04 Release Notes</h1>
+		<p><strong>Xubuntu 17.04 (Zesty Zapus)</strong></p>
+
+<p>Xubuntu 17.04 will be supported for 9 months until January 2018. If you need Long Term Support, it is recommended you use <a href="https://xubuntu.org/news/xubuntu-16-04-release/">Xubuntu 16.04 LTS</a> instead.</p>
+
+<p>Several Xfce panel plugins and applications have been ported to GTK+ 3, paving the way for improved theming and further development. Core Xfce libraries exo and libxfce4ui have also been updated with full GTK+ 3 support, the latter adding support for Glade development in Xubuntu with the installation of ‘‘libxfce4ui-glade’’. The Greybird and Numix themes have also been refreshed with improved support for the toolkit.</p>
+
+<p>Camera functionality has been restored in Mugshot, Parole introduced a new mini mode and improvements for network streams, and a number of welcome fixes have made their way into Thunar and Ristretto. <em>Simon Tatham’s Portable Puzzle Collection</em> (<a href="https://launchpad.net/ubuntu/+source/sgt-puzzles">sgt-puzzles</a>), an addicting collection of logic games, has been included along with the new <em>SGT Puzzles Collection</em> (<a href="https://launchpad.net/ubuntu/+source/sgt-launcher">sgt-launcher</a>).</p>
+
+<p>This release is based on the 4.10.x Linux release series. LibreOffice 5.3 includes a number of fixes and introduces new experimental interface options. Firefox 52 and Thunderbird 45 are included.</p>
+
+<p>For new installs a swap file will be used instead of a swap partition. Upgrades from earlier versions are not affected.</p>
+
+<p>See the main Ubuntu <a href="https://wiki.ubuntu.com/ZestyZapus/ReleaseNotes"> Release Note</a> for more general issues and updates.</p>
+
+<p>While thanks are due to all of those who contributed to this release, the Xubuntu Testing Team would particularly like to thank all of those who have reported on the Iso Tracker during this cycle.</p>
+
+<h2 id="notable-issues">Notable Issues</h2>
+
+<h3 id="installer-issues">Installer Issues</h3>
+
+<ul>
+  <li>System encryption password set before setting keyboard locale (<a href="https://launchpad.net/bugs/1047384">1047384</a>)</li>
+  <li><strong>Workround:</strong> Start the installation with the correct keymap. (<a href="https://help.ubuntu.com/community/BootOptions#Changing_the_CD.27s_Default_Boot_Options">Use F3</a>) to set your keymap <em>before</em> booting to Try or Install Xubuntu from that menu.</li>
+</ul>
+
+<h3 id="general-issues">General Issues</h3>
+
+<ul>
+  <li>Parole Media Player
+    <ul>
+      <li>Parole progress bar lag (<a href="https://launchpad.net/bugs/1667786">1667786</a>)</li>
+      <li>Parole crashes while fast forwarding with the playback slider (<a href="https://launchpad.net/bugs/1374887">1374887</a>)</li>
+      <li>Parole Clear History (Open Location) crashes (<a href="https://launchpad.net/bugs/1214514">1214541</a>)</li>
+      <li>Parole Clear History (Open Recent) clears global history (<a href="https://launchpad.net/bugs/1681886">1681886</a>)</li>
+    </ul>
+  </li>
+  <li>Thunar File Manager
+    <ul>
+      <li>Thunar occasionally hangs after file changes (<a href="https://bugzilla.xfce.org/show_bug.cgi?id=13481">13481</a> / <a href="https://bugzilla.xfce.org/show_bug.cgi?id=13472">13472</a>)</li>
+      <li>Thunar occasionally doesn’t refresh window (<a href="https://bugzilla.xfce.org/show_bug.cgi?id=13364">13364</a>)</li>
+    </ul>
+  </li>
+  <li>SGT Puzzles Collection: Menu bar grayed out (<a href="https://launchpad.net/bugs/1670610">1670610</a>)</li>
+  <li>Xfce Indicator Plugin: Label missing from “Clear Known Indicators” dialog (<a href="https://launchpad.net/bugs/1644917">1644971</a>)</li>
+</ul>
+
+<h2 id="changes-and-bug-fixes">Changes and Bug Fixes</h2>
+
+<ul>
+  <li>Thunar
+    <ul>
+      <li>Fixes to various issues related to copying and renaming</li>
+    </ul>
+  </li>
+  <li>Parole
+    <ul>
+      <li>New release includes “mini mode” and improved streaming support</li>
+    </ul>
+  </li>
+  <li>xfce4-notifyd
+    <ul>
+      <li>New release includes “do not disturb” mode, notification muting, persistence support</li>
+    </ul>
+  </li>
+  <li>xfce4-taskmanager
+    <ul>
+      <li>New release includes ability to click on window to select process</li>
+    </ul>
+  </li>
+  <li>xubuntu-default-settings
+    <ul>
+      <li>New file templates included - OpenDocument Writer, OpenDocument Spreadsheet</li>
+      <li>Improved QT5 application appearance (requires installation of ‘‘qt5-style-plugins’’)</li>
+    </ul>
+  </li>
+  <li>sgt-launcher
+    <ul>
+      <li>New launcher for Simon Tatham’s Portable Puzzle Collection</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="changelogs">Changelogs</h2>
+
+<h3 id="xubuntuother-packages">Xubuntu/Other Packages</h3>
+
+<ul>
+  <li>blueman (<a href="https://launchpad.net/ubuntu/zesty/+source/blueman/+changelog">changelog</a>)</li>
+  <li>gtk-theme-config (<a href="https://launchpad.net/ubuntu/zesty/+source/gtk-theme-config/+changelog">changelog</a>)</li>
+  <li>gtk2-engines-xfce (<a href="https://launchpad.net/ubuntu/zesty/+source/gtk2-engines-xfce/+changelog">changelog</a>)</li>
+  <li>lightdm-gtk-greeter (<a href="https://launchpad.net/ubuntu/zesty/+source/lightdm-gtk-greeter/+changelog">changelog</a>)</li>
+  <li>lightdm-gtk-greeter-settings (<a href="https://launchpad.net/ubuntu/zesty/+source/lightdm-gtk-greeter-settings/+changelog">changelog</a>)</li>
+  <li>menulibre (<a href="https://launchpad.net/ubuntu/zesty/+source/menulibre/+changelog">changelog</a>)</li>
+  <li>mugshot (<a href="https://launchpad.net/ubuntu/zesty/+source/mugshot/+changelog">changelog</a>)</li>
+  <li>pavucontrol (<a href="https://launchpad.net/ubuntu/zesty/+source/pavucontrol/+changelog">changelog</a>)</li>
+  <li>sgt-launcher (<a href="https://launchpad.net/ubuntu/zesty/+source/sgt-launcher/+changelog">changelog</a>)</li>
+  <li>shimmer-themes (<a href="https://launchpad.net/ubuntu/zesty/+source/shimmer-themes/+changelog">changelog</a>)</li>
+  <li>xfce4-volumed (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-volumed/+changelog">changelog</a>)</li>
+  <li>xfpanel-switch  (<a href="https://launchpad.net/ubuntu/zesty/+source/xfpanel-switch/+changelog">changelog</a>)</li>
+  <li>xubuntu-artwork (<a href="https://launchpad.net/ubuntu/zesty/+source/xubuntu-artwork/+changelog">changelog</a>)</li>
+  <li>xubuntu-core (<a href="https://launchpad.net/ubuntu/zesty/+source/xubuntu-core/+changelog">changelog</a>)</li>
+  <li>xubuntu-default-settings (<a href="https://launchpad.net/ubuntu/zesty/+source/xubuntu-default-settings/+changelog">changelog</a>)</li>
+  <li>xubuntu-desktop (<a href="https://launchpad.net/ubuntu/zesty/+source/xubuntu-desktop/+changelog">changelog</a>)</li>
+  <li>xubuntu-docs (<a href="https://launchpad.net/ubuntu/zesty/+source/xubuntu-docs/+changelog">changelog</a>)</li>
+  <li>xubuntu-icon-theme (<a href="https://launchpad.net/ubuntu/zesty/+source/xubuntu-icon-theme/+changelog">changelog</a>)</li>
+  <li>xubuntu-meta (<a href="https://launchpad.net/ubuntu/zesty/+source/xubuntu-meta/+changelog">changelog</a>)</li>
+  <li>xubuntu-wallpapers (<a href="https://launchpad.net/ubuntu/zesty/+source/xubuntu-wallpapers/+changelog">changelog</a>)</li>
+</ul>
+
+<h3 id="xfce-core">Xfce Core</h3>
+<ul>
+  <li>exo (<a href="https://launchpad.net/ubuntu/zesty/+source/exo/+changelog">changelog</a>)</li>
+  <li>thunar (<a href="https://launchpad.net/ubuntu/zesty/+source/thunar/+changelog">changelog</a>)</li>
+  <li>xfce4-appfinder (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-appfinder/+changelog">changelog</a>)</li>
+  <li>xfce4-panel (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-panel/+changelog">changelog</a>)</li>
+  <li>xfce4-power-manager (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-power-manager/+changelog">changelog</a>)</li>
+  <li>xfce4-session (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-session/+changelog">changelog</a>)</li>
+  <li>xfce4-settings (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-settings/+changelog">changelog</a>)</li>
+  <li>xfconf (<a href="https://launchpad.net/ubuntu/zesty/+source/xfconf/+changelog">changelog</a>)</li>
+  <li>xfdesktop4 (<a href="https://launchpad.net/ubuntu/zesty/+source/xfdesktop4/+changelog">changelog</a>)</li>
+  <li>xfwm4 (<a href="https://launchpad.net/ubuntu/zesty/+source/xfwm4/+changelog">changelog</a>)</li>
+</ul>
+
+<h3 id="xfce-applications">Xfce Applications</h3>
+
+<ul>
+  <li>catfish (<a href="https://launchpad.net/ubuntu/zesty/+source/catfish/+changelog">changelog</a>)</li>
+  <li>mousepad (<a href="https://launchpad.net/ubuntu/zesty/+source/mousepad/+changelog">changelog</a>)</li>
+  <li>orage (<a href="https://launchpad.net/ubuntu/zesty/+source/orage/+changelog">changelog</a>)</li>
+  <li>parole (<a href="https://launchpad.net/ubuntu/zesty/+source/parole/+changelog">changelog</a>)</li>
+  <li>xfburn (<a href="https://launchpad.net/ubuntu/zesty/+source/xfburn/+changelog">changelog</a>)</li>
+  <li>xfce4-notifyd (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-notifyd/+changelog">changelog</a>)</li>
+  <li>xfce4-screenshooter (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-screenshooter/+changelog">changelog</a>)</li>
+  <li>xfce4-taskmanager (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-taskmanager/+changelog">changelog</a>)</li>
+  <li>xfce4-terminal (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-terminal/+changelog">changelog</a>)</li>
+</ul>
+
+<h3 id="xfce-panel-plugins">Xfce Panel Plugins</h3>
+<ul>
+  <li>xfce4-cpugraph-plugin (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-cpugraph-plugin/+changelog">changelog</a>)</li>
+  <li>xfce4-dict (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-dict/+changelog">changelog</a>)</li>
+  <li>xfce4-indicator-plugin (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-indicator-plugin/+changelog">changelog</a>)</li>
+  <li>xfce4-mailwatch-plugin (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-mailwatch-plugin/+changelog">changelog</a>)</li>
+  <li>xfce4-netload-plugin (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-netload-plugin/+changelog">changelog</a>)</li>
+  <li>xfce4-notes-plugin (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-notes-plugin/+changelog">changelog</a></li>
+  <li>xfce4-places-plugin (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-places-plugin/+changelog">changelog</a>)</li>
+  <li>xfce4-quicklauncher-plugin (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-quicklauncher-plugin/+changelog">changelog</a>)</li>
+  <li>xfce4-systemload-plugin (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-systemload-plugin/+changelog">changelog</a>)</li>
+  <li>xfce4-verve-plugin (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-verve-plugin/+changelog">changelog</a>)</li>
+  <li>xfce4-weather-plugin (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-weather-plugin/+changelog">changelog</a>)</li>
+  <li>xfce4-whiskermenu-plugin (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-whiskermenu-plugin/+changelog">changelog</a>)</li>
+  <li>xfce4-xkb-plugin (<a href="https://launchpad.net/ubuntu/zesty/+source/xfce4-xkb-plugin/+changelog">changelog</a>)</li>
+</ul>
+
+
+		<br />
+		<h1>See also</h1><p class="documents"><a class="button" href="https://xubuntu.org/release/17.04">17.04 Release Page (xubuntu.org)</a>
+					</p></main>
+</div>
+
+</body>
+</html>

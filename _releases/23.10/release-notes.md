@@ -174,7 +174,7 @@ _Significant package and version updates. For full package changelogs, see the [
 * pipewire [changelog](https://launchpad.net/ubuntu/mantic/+source/pipewire/+changelog)
 * sgt-launcher [changelog](https://launchpad.net/ubuntu/mantic/+source/sgt-launcher/+changelog)
 * shimmer-themes [changelog](https://launchpad.net/ubuntu/mantic/+source/shimmer-themes/+changelog)
-* syncaptic [changelog](https://launchpad.net/ubuntu/mantic/+source/synaptic/+changelog)
+* synaptic [changelog](https://launchpad.net/ubuntu/mantic/+source/synaptic/+changelog)
 * xcape [changelog](https://launchpad.net/ubuntu/mantic/+source/xcape/+changelog)
 * xubuntu-artwork [changelog](https://launchpad.net/ubuntu/mantic/+source/xubuntu-artwork/+changelog)
 * xubuntu-core [changelog](https://launchpad.net/ubuntu/mantic/+source/xubuntu-meta/+changelog)

@@ -155,6 +155,33 @@ table th {
 
 /* */
 
+@media screen and (min-width: 800px) {
+   .release {
+      display: grid;
+      grid-template-columns: 300px auto;
+      grid-template-areas: "title documents" "none more";
+   }
+      .release h2 {
+         grid-area: title;
+         align-self: center;
+         margin: 0;
+      }
+      .release .documents {
+         grid-area: documents;
+         margin: 0;
+      }
+         .release .documents a {
+            margin: 0 0.5em 0 0;
+         }
+
+      .release .more {
+         grid-area: more;
+         margin-top: 0.5em;
+      }
+}
+
+/* */
+
 a.button {
 	display: inline-block;
 

@@ -17,10 +17,11 @@ layout: default
                   {%- else -%}
                      {{ document.title }}
                   {%- endif -%}
+                  {{ document.priority }}
                </a>
             {%- endfor -%}
          </p>
-         <p>For download links and more, visit the <a href="https://xubuntu.org/release/{{ release.name }}">{{ release.name }} Release Page</a> on xubuntu.org.</p>
+         <p class="more">For download links and more, visit the <a href="https://xubuntu.org/release/{{ release.name }}">{{ release.name }} Release Page</a> on xubuntu.org.</p>
       </div>
    {%- endfor -%}
 {%- endif -%}
